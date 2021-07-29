@@ -20,7 +20,7 @@ pipeline {
                 echo 'build complete'
             }
         }
-        stage('image build') {
+        stage('Image build') {
             steps {
                 echo 'building docker image'
                 sh "docker build -t position-simulator:${commit_id} ."
